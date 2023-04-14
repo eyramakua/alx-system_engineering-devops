@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown vincent hello, chgrp staff school
+chown vincent : staff *
