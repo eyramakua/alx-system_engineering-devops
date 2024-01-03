@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#Bash script that loops from 1 to 20.
+num=1
+while [ $num -le 20 ]
+do
+	case $num in
+		4) echo "$num and then bad luck from China";;
+		9) echo "$num and then bad luck from Japan";;
+		17) echo "$num and then bad luck from Italy";;
+	esac
+	echo "$num"
+	((num++))
+done
