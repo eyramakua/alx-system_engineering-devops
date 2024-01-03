@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #Bash script that displays the clock.
-timehour=0
-while [ $timehour -le 12 ]
+hour=0
+while [ $hour -le 12 ]
 do
-	echo "Hour : $timehour"
-	timeminutes=1
-	while [ $timeminutes -lt 60 ]
+	echo "Hour : $hour"
+	minutes=1
+	while [ $minutes -lt 60 ]
 	do
-		echo "$timeminutes"
-		((timeminutes=timeminutes+1))
+		echo "$minutes"
+		((minutes=minutes+1))
 	done
-	((timehour=timehour+1))
+	((hour=hour+1))
 done
