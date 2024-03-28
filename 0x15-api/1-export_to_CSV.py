@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/python3
 '''
 module that uses REST api
 '''
