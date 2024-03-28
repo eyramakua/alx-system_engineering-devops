@@ -31,7 +31,7 @@ def todojson():
         for i in range(0, size - 1):
             f.write('{{"task": "{}", "completed": {}, "username": "{}"}}, '
                     .format(titles[i], stat[i], name))
-        f.write('{{"task": "{}", "completed": {}, "username": "{}"}},'
+        f.write('{{"task": "{}", "completed": {}, "username": "{}"}}'
                 .format(titles[-1], stat[-1], name))
         f.write(''']}''')
 
