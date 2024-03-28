@@ -10,11 +10,11 @@ import sys
 def todofunction():
     '''function that gets todo taks'''
     r = requests.get('https://jsonplaceholder.typicode.com/users/{}'
-                        .format(sys.argv[1]))
+                     .format(sys.argv[1]))
     new = r.json()
     name = new.get('name')
     r = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
-                        .format(sys.argv[1]))
+                     .format(sys.argv[1]))
 
     new = r.json()
     size = len(new)
@@ -27,7 +27,8 @@ def todofunction():
 
     print("Employee {} is done with tasks({}/{}):".format(name, count, size))
     for i in range(0, count):
-                 print("\t {}".format(titles[i]))
+        print("\t {}".format(titles[i]))
+
 
 if __name__ == "__main__":
     todofunction()
